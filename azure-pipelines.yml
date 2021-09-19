@@ -29,7 +29,7 @@ steps:
     env:
       QtBaseDir: $(QtBaseDir)
 
-   - task: Cache@2
+  - task: Cache@2
     displayName: Restore cached OBS Studio dependencies
     inputs:
       key: 'obsdeps | "$(Agent.OS)"'
